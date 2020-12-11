@@ -1,38 +1,91 @@
-.App {
+.app {
+  background-color: #fffac6;
+  background: linear-gradient(to bottom, #fffff9, #fffac6);
+}
+
+.app__logoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.app__logo {
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.app__banner {
+  display: flex;
+  padding: 20px;
+}
+
+.app__banner img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.app__bannerLeft>img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.app>p {
+  padding: 15px;
+}
+
+.product__image {
+  width: 100%;
+}
+
+.app__product {
+  padding: 20px;
+}
+
+.app__product>p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.line {
+  border: 1px solid rgba(255, 0, 0, 0.644);
+  margin: 10px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__footer {
+  margin-top: 10px;
+  background-color: rgba(255, 0, 0, 0.644);
+  padding: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.app__footer div {
+  display: flex;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.MuiSvgIcon-root {
+  color: transparent;
+  border-radius: 50%;
+  background-color: white;
+  color: rgba(255, 0, 0, 0.644);
+  padding: 2px;
+  box-sizing: border-box;
+  margin-right: 5px;
+}
+
+.facebookIcon {
+  margin-right: 5px;
+}
+
+.world>.MuiSvgIcon-root {
+  padding: 0px;
+}
+
+@media only screen and (max-width: 820px) {
+  .app__footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
 }
